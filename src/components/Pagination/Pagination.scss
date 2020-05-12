@@ -1,0 +1,43 @@
+.pagination{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 10px;
+    li{
+        display: inline;
+        text-align: center;
+    }
+    button{
+        float: left;
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        color:#fff;
+        margin-left: -1px;
+        border:1px solid transparent;
+        line-height: 1.5;
+        cursor: pointer;
+        margin:0 5px;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #F7C12C;
+        border-radius: 15px;
+       &.prev{
+         width:100px;
+       }
+       &.next{
+         width:100px;
+       }
+        &:hover{
+          background-color:#FFA500;
+        }
+         &.active, &:active{
+           background-color:rgb(155, 103, 0);
+         }
+    }
+    .selected{
+        background-color: #0f637d;
+    }
+  }
